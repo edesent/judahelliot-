@@ -558,7 +558,7 @@ function FeaturedVideoSection() {
             preload="metadata"
             className="w-full aspect-video object-cover rounded-lg"
           >
-            <source src="/videos/Judah Elliott (1).mp4" type="video/mp4" />
+            <source src="https://fgummchcbkqegf1t.public.blob.vercel-storage.com/Judah%20Elliott%20%281%29.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
