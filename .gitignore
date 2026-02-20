@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# large video files (over GitHub 100MB limit)
+Images/Judah Elliott.mp4
+public/videos/Judah Elliott (1).mp4
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

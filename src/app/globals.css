@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdfbf7;
+  --foreground: #4a4543;
+  --primary: #a7c7e7;
+  --primary-light: #d4e5f7;
+  --primary-dark: #7eb0de;
+  --warm: #f5ebe0;
+  --warm-dark: #e8d5c4;
+  --cream: #faf6f0;
+  --accent: #d4a574;
+  --text-muted: #7a7573;
+  --border: #e8e2dc;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-warm: var(--warm);
+  --color-warm-dark: var(--warm-dark);
+  --color-cream: var(--cream);
+  --color-accent: var(--accent);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Georgia', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Masonry-style picture wall */
+.picture-wall {
+  column-count: 1;
+  column-gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .picture-wall {
+    column-count: 2;
+    column-gap: 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  .picture-wall {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .picture-wall {
+    column-count: 4;
+  }
+}
+
+.picture-wall-item {
+  break-inside: avoid;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 640px) {
+  .picture-wall-item {
+    margin-bottom: 16px;
+  }
+}
+
+/* Lightbox animations */
+.lightbox-enter {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.lightbox-image-enter {
+  animation: scaleIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Soft shadow for photos */
+.photo-shadow {
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.06),
+    0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.photo-shadow:hover {
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.1),
+    0 8px 24px rgba(0, 0, 0, 0.06);
 }
