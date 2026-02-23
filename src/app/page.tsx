@@ -623,7 +623,6 @@ function CardsGallery() {
     { src: "/cards/Scan 23.jpeg" },
     { src: "/cards/Scan 24.jpeg" },
     { src: "/cards/Scan 25.jpeg" },
-    { src: "/cards/Scan 26.jpeg" },
     { src: "/cards/Scan 27.jpeg" },
     { src: "/cards/Scan 28.jpeg" },
     { src: "/cards/Scan 29.jpeg" },
