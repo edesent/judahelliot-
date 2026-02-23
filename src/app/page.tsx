@@ -162,18 +162,7 @@ function Navigation() {
 // Hero section
 function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 relative overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/judah-background.png"
-          alt=""
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-warm/40 via-cream/60 to-background/90" />
-      </div>
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 relative z-10">
       <div className="text-center max-w-2xl relative z-10">
         {/* Main photo */}
         <div className="w-52 h-52 md:w-72 md:h-72 mx-auto mb-10 rounded-full bg-warm border-4 border-white shadow-lg flex items-center justify-center overflow-hidden relative">
@@ -213,7 +202,7 @@ function HeroSection() {
 // About Judah Section
 function AboutSection() {
   return (
-    <section className="py-20 px-4 bg-background">
+    <section className="py-20 px-4 relative z-10">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-normal text-center mb-3 tracking-wide">In Loving Memory</h2>
         <div className="w-24 h-px bg-accent/50 mx-auto mb-12"></div>
@@ -756,8 +745,21 @@ export default function Home() {
   return (
     <main className="bg-background">
       <Navigation />
-      <HeroSection />
-      <AboutSection />
+      <div className="relative overflow-hidden">
+        {/* Background image spanning hero + about sections */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/judah-background.png"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-warm/40 via-cream/60 to-cream/95" />
+        </div>
+        <HeroSection />
+        <AboutSection />
+      </div>
       <FeaturedVideoSection />
       <PhotoGallery />
       <VideoSection />
