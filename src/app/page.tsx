@@ -198,7 +198,7 @@ function HeroSection() {
 // About Judah Section
 function AboutSection() {
   return (
-    <section className="py-20 px-4 relative z-10">
+    <section className="pt-6 pb-20 px-4 relative z-10">
       <div className="max-w-4xl mx-auto">
         <div className="space-y-6 text-foreground leading-relaxed text-center">
           <p>
