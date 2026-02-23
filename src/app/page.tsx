@@ -162,7 +162,7 @@ function Navigation() {
 // Hero section
 function HeroSection() {
   return (
-    <section className="flex flex-col items-center px-4 pt-32 pb-20 relative z-10">
+    <section className="flex flex-col items-center px-4 pt-32 pb-28 relative z-10">
       <div className="text-center max-w-2xl relative z-10 mb-12">
         {/* Main photo */}
         <div className="w-52 h-52 md:w-72 md:h-72 mx-auto mb-10 rounded-full bg-warm border-4 border-white shadow-lg flex items-center justify-center overflow-hidden relative">
