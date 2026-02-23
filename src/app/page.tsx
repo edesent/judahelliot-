@@ -619,10 +619,30 @@ function CardsGallery() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Add card photos here
   const cards: { src: string; from?: string }[] = [
-    // { src: "/cards/card1.jpg", from: "From Grandma" },
-    // { src: "/cards/card2.jpg", from: "From the Smith Family" },
+    { src: "/cards/Scan 23.jpeg" },
+    { src: "/cards/Scan 24.jpeg" },
+    { src: "/cards/Scan 25.jpeg" },
+    { src: "/cards/Scan 26.jpeg" },
+    { src: "/cards/Scan 27.jpeg" },
+    { src: "/cards/Scan 28.jpeg" },
+    { src: "/cards/Scan 29.jpeg" },
+    { src: "/cards/Scan 30.jpeg" },
+    { src: "/cards/Scan 31.jpeg" },
+    { src: "/cards/Scan 32.jpeg" },
+    { src: "/cards/Scan 33.jpeg" },
+    { src: "/cards/Scan 34.jpeg" },
+    { src: "/cards/Scan 35.jpeg" },
+    { src: "/cards/Scan 36.jpeg" },
+    { src: "/cards/Scan 37.jpeg" },
+    { src: "/cards/Scan 38.jpeg" },
+    { src: "/cards/Scan 39.jpeg" },
+    { src: "/cards/Scan 40.jpeg" },
+    { src: "/cards/Scan 41.jpeg" },
+    { src: "/cards/Scan 42.jpeg" },
+    { src: "/cards/Scan 43.jpeg" },
+    { src: "/cards/Scan 44.jpeg" },
+    { src: "/cards/Scan 45.jpeg" },
   ];
 
   const openLightbox = useCallback((index: number) => {
