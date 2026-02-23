@@ -183,9 +183,13 @@ function HeroSection() {
 
         <div className="w-24 h-px bg-accent/50 mx-auto mb-8"></div>
 
-        <h2 className="text-3xl font-normal text-foreground tracking-wide">
+        <h2 className="text-3xl font-normal text-foreground tracking-wide mb-3">
           In Loving Memory
         </h2>
+
+        <p className="text-foreground leading-relaxed text-lg italic">
+          Though your time with us was brief, your impact will last forever.
+        </p>
       </div>
     </section>
   );
