@@ -162,8 +162,8 @@ function Navigation() {
 // Hero section
 function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 relative z-10">
-      <div className="text-center max-w-2xl relative z-10">
+    <section className="flex flex-col items-center px-4 pt-32 pb-20 relative z-10">
+      <div className="text-center max-w-2xl relative z-10 mb-12">
         {/* Main photo */}
         <div className="w-52 h-52 md:w-72 md:h-72 mx-auto mb-10 rounded-full bg-warm border-4 border-white shadow-lg flex items-center justify-center overflow-hidden relative">
           <Image src="/images/baby-judah.png" alt="Judah Elliot" fill className="object-cover object-[center_1%]" />
@@ -191,14 +191,7 @@ function HeroSection() {
           Though your time with us was brief, your impact will last forever.
         </p>
       </div>
-    </section>
-  );
-}
 
-// About Judah Section
-function AboutSection() {
-  return (
-    <section className="pt-6 pb-20 px-4 relative z-10">
       <div className="max-w-4xl mx-auto">
         <div className="space-y-6 text-foreground leading-relaxed text-center">
           <p>
@@ -206,7 +199,7 @@ function AboutSection() {
           </p>
 
           <p>
-            Judah was born on March 18, 2025 and was taken far too soon for us. Judah's family loved his long dark hair, chunky rolls and warm snuggles.
+            Judah was born on March 18, 2025 and was taken far too soon for us. Judah&apos;s family loved his long dark hair, chunky rolls and warm snuggles.
           </p>
 
           <p>
@@ -214,11 +207,11 @@ function AboutSection() {
           </p>
 
           <p>
-            Though his time on earth was brief, Judah's presence changed the life of each one who held him. His name meaning "Praise" reminds us to choose to praise God for the gift of his life and every moment we had with him.
+            Though his time on earth was brief, Judah&apos;s presence changed the life of each one who held him. His name meaning &ldquo;Praise&rdquo; reminds us to choose to praise God for the gift of his life and every moment we had with him.
           </p>
 
           <p>
-            In remembrance of Judah's life and to keep his memory alive in his siblings' lives, we are building a treehouse in our backyard that will be named the 'House of Judah'.
+            In remembrance of Judah&apos;s life and to keep his memory alive in his siblings&apos; lives, we are building a treehouse in our backyard that will be named the &lsquo;House of Judah&rsquo;.
           </p>
         </div>
       </div>
@@ -751,7 +744,6 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-warm/40 via-cream/60 to-cream/95" />
         </div>
         <HeroSection />
-        <AboutSection />
       </div>
       <FeaturedVideoSection />
       <PhotoGallery />
