@@ -183,17 +183,9 @@ function HeroSection() {
 
         <div className="w-24 h-px bg-accent/50 mx-auto mb-8"></div>
 
-        <p className="text-foreground leading-relaxed text-lg">
-          Though your time with us was brief, your impact will last forever.
-        </p>
-      </div>
-
-      <div className="mt-16 relative z-10">
-        <a href="#photos" className="text-accent hover:text-accent/80 transition-colors">
-          <svg className="w-8 h-8 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </a>
+        <h2 className="text-3xl font-normal text-foreground tracking-wide">
+          In Loving Memory
+        </h2>
       </div>
     </section>
   );
@@ -204,9 +196,6 @@ function AboutSection() {
   return (
     <section className="py-20 px-4 relative z-10">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-normal text-center mb-3 tracking-wide">In Loving Memory</h2>
-        <div className="w-24 h-px bg-accent/50 mx-auto mb-12"></div>
-
         <div className="space-y-6 text-foreground leading-relaxed text-center">
           <p>
             Judah Elliot Desent unexpectedly went from the arms of his parents to the arms of Jesus on May 26th, 2025 at Beaumont Royal Oak Hospital.
