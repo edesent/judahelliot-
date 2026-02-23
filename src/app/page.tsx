@@ -642,6 +642,8 @@ function CardsGallery() {
     { src: "/cards/Scan 43.jpeg" },
     { src: "/cards/Scan 44.jpeg" },
     { src: "/cards/Scan 45.jpeg" },
+    { src: "/cards/Scan 46.jpeg" },
+    { src: "/cards/Scan 47.jpeg" },
   ];
 
   const openLightbox = useCallback((index: number) => {
