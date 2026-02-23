@@ -660,8 +660,8 @@ function CardsGallery() {
   }, [cards.length]);
 
   return (
-    <section id="cards" className="py-20 px-4 bg-warm/30">
-      <div className="max-w-6xl mx-auto">
+    <section id="cards" className="py-20 px-4 md:px-8 bg-warm/30">
+      <div className="max-w-[1600px] mx-auto">
         <h2 className="text-3xl font-normal text-center mb-3 tracking-wide">Cards & Messages of Love</h2>
         <div className="w-24 h-px bg-accent/50 mx-auto mb-4"></div>
         <p className="text-center text-text-muted mb-12 italic">
